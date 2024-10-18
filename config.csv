@@ -1,0 +1,3 @@
+graphviz_path,/usr/bin/dot
+repository_path,https://api.github.com/repos/google/guava/git/refs/tags
+tag_name,v32.1.0
