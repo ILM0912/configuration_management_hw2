@@ -1,3 +1,8 @@
-graphviz_path,
-repository_path,
-tag_name,
+graphviz_path,C:/Program Files/Graphviz/bin/dot.exe
+repository_path,C:\Users\admin\Frontend\sprint-1
+tag_name,v2.0
+
+C:\Users\admin\Frontend\sprint-1
+C:\Users\admin\PycharmProjects\dependency_visualizer
+C:\Users\admin\PycharmProjects\vShell
+C:\Users\admin\source\repos\СИАОД
