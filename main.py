@@ -66,8 +66,8 @@ def get_commits_dependency(repo_path, starting_commit_info):
                 commits[current_commit_hash] = commit_info
                 commit_hashes.extend(parent_hashes)
         except (FileNotFoundError, zlib.error) as e:
-            print(f"Ошибка при чтении или декомпрессии коммита {current_commit_hash}: {e}")
-            exit(1)
+            error_message = f"Ошибка при чтении или декомпрессии коммита {current_commit_hash}"
+            raise Exception(error_message)
     return commits
 
 

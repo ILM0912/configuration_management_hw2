@@ -1,6 +1,20 @@
 digraph CommitGraph {
 node [shape=rect, color=blue]
 
+"ec928f280b243b1105f38aa2736eee4dbf3b5a71" [label="hexsha: ec928f280b243b1105f38aa2736eee4dbf3b5a71
+author: ILM0912
+message: delete requirements.txt because no requirements.txt
+date: 20.10.2024 20:19"];
+"3ed40d3da60b579a91d27203f294e2c64c47f4f5" -> "ec928f280b243b1105f38aa2736eee4dbf3b5a71";
+
+
+"3ed40d3da60b579a91d27203f294e2c64c47f4f5" [label="hexsha: 3ed40d3da60b579a91d27203f294e2c64c47f4f5
+author: ILM0912
+message: change creating .dot file and add sample
+date: 20.10.2024 20:16"];
+"f9783e61f4b21744a5593c987ab1676465943d75" -> "3ed40d3da60b579a91d27203f294e2c64c47f4f5";
+
+
 "f9783e61f4b21744a5593c987ab1676465943d75" [label="hexsha: f9783e61f4b21744a5593c987ab1676465943d75
 author: ILM0912
 message: Merge branch 'abandoning_GitPython'

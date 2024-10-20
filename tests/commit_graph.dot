@@ -1,0 +1,22 @@
+digraph CommitGraph {
+node [shape=rect, color=blue]
+
+"27696f30a36d466d0de0902accf033416f9df061" [label="hexsha: 27696f30a36d466d0de0902accf033416f9df061
+author: ILM0912
+message: конечная версия с тестами
+date: 27.09.2024 20:23"];
+"93bea78a8f78cc73137248304eac42a8c07528a5" -> "27696f30a36d466d0de0902accf033416f9df061";
+
+
+"93bea78a8f78cc73137248304eac42a8c07528a5" [label="hexsha: 93bea78a8f78cc73137248304eac42a8c07528a5
+author: ILM0912
+message: добавлена find, осталось тесты добавить
+date: 27.09.2024 15:32"];
+"5d07e5d30eb32a5082eb8133ef8b79c97f029ba7" -> "93bea78a8f78cc73137248304eac42a8c07528a5";
+
+
+"5d07e5d30eb32a5082eb8133ef8b79c97f029ba7" [label="hexsha: 5d07e5d30eb32a5082eb8133ef8b79c97f029ba7
+author: ILM0912
+message: осталось доделать find
+date: 27.09.2024 01:15"];
+}
