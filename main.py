@@ -65,7 +65,6 @@ def get_commits_dependency(repo_path, starting_commit_info):
                 }
                 commits[current_commit_hash] = commit_info
                 commit_hashes.extend(parent_hashes)
-                print(commit_hashes, parent_hashes)
         except (FileNotFoundError, zlib.error) as e:
             print(f"Ошибка при чтении или декомпрессии коммита {current_commit_hash}: {e}")
             exit(1)
@@ -74,12 +73,12 @@ def get_commits_dependency(repo_path, starting_commit_info):
 
 def create_dot_file(commits_dict, output_file):
     with open(output_file, 'w', encoding='UTF-8') as file:
-        file.write('digraph CommitGraph {\n')
+        file.write('digraph CommitGraph {\nnode [shape=rect, color=blue]')
         for commit_id, commit_info in commits_dict.items():
             author = commit_info['author']
             message = commit_info['message']
-            files_string = '\n'.join([f"{file}" for file in commit_info['files']])
-            file.write(f'\n\n"{commit_id}" [label="author: {author}\nmessage: {message}\nfiles: {files_string}"];\n')
+            date = commit_info['date']
+            file.write(f'\n\n"{commit_id}" [label="hexsha: {commit_id}\nauthor: {author}\nmessage: {message}\ndate: {date}"];\n')
             for parent_id in commit_info['parent']:
                 file.write(f'"{parent_id}" -> "{commit_id}";\n')
         file.write('}\n')

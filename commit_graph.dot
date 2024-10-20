@@ -1,0 +1,44 @@
+digraph CommitGraph {
+node [shape=rect, color=blue]
+
+"f9783e61f4b21744a5593c987ab1676465943d75" [label="hexsha: f9783e61f4b21744a5593c987ab1676465943d75
+author: ILM0912
+message: Merge branch 'abandoning_GitPython'
+date: 20.10.2024 20:10"];
+"afcf97d1a49eacce25b4f0acefdc95357fb25556" -> "f9783e61f4b21744a5593c987ab1676465943d75";
+"b847a1c0d5e0816500955451f74d05f12b94add7" -> "f9783e61f4b21744a5593c987ab1676465943d75";
+
+
+"afcf97d1a49eacce25b4f0acefdc95357fb25556" [label="hexsha: afcf97d1a49eacce25b4f0acefdc95357fb25556
+author: ILM0912
+message: adding visualization (graphviz)
+date: 19.10.2024 21:49"];
+"69f51458cbe9986fc66df0a982960ebe45e2d46b" -> "afcf97d1a49eacce25b4f0acefdc95357fb25556";
+
+
+"b847a1c0d5e0816500955451f74d05f12b94add7" [label="hexsha: b847a1c0d5e0816500955451f74d05f12b94add7
+author: ILM0912
+message: remove GitPython library (working with the .git folder)
+date: 20.10.2024 20:04"];
+"69f51458cbe9986fc66df0a982960ebe45e2d46b" -> "b847a1c0d5e0816500955451f74d05f12b94add7";
+
+
+"69f51458cbe9986fc66df0a982960ebe45e2d46b" [label="hexsha: 69f51458cbe9986fc66df0a982960ebe45e2d46b
+author: ILM0912
+message: getting dependencies using GitPython
+date: 19.10.2024 21:41"];
+"c2d966e3fb8ae722e2f0f8723e31573f60db7c4e" -> "69f51458cbe9986fc66df0a982960ebe45e2d46b";
+
+
+"c2d966e3fb8ae722e2f0f8723e31573f60db7c4e" [label="hexsha: c2d966e3fb8ae722e2f0f8723e31573f60db7c4e
+author: ILM0912
+message: update config.csv
+date: 18.10.2024 16:25"];
+"4a744ccce2b0345c18b41428536b9b4ae5ca70d8" -> "c2d966e3fb8ae722e2f0f8723e31573f60db7c4e";
+
+
+"4a744ccce2b0345c18b41428536b9b4ae5ca70d8" [label="hexsha: 4a744ccce2b0345c18b41428536b9b4ae5ca70d8
+author: ILM0912
+message: start and load config
+date: 18.10.2024 16:07"];
+}
