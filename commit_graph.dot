@@ -1,58 +1,179 @@
 digraph CommitGraph {
 node [shape=rect, color=blue]
 
-"ec928f280b243b1105f38aa2736eee4dbf3b5a71" [label="hexsha: ec928f280b243b1105f38aa2736eee4dbf3b5a71
+"122d9783ee9f16cdfa4b6e1ccfd19e1988cb7af6" [label="hexsha: 122d9783ee9f16cdfa4b6e1ccfd19e1988cb7af6
 author: ILM0912
-message: delete requirements.txt because no requirements.txt
-date: 20.10.2024 20:19"];
-"3ed40d3da60b579a91d27203f294e2c64c47f4f5" -> "ec928f280b243b1105f38aa2736eee4dbf3b5a71";
+message: fix final
+date: 18.10.2024 13:11"];
+"59458a683c039e2def524d7b7cffb39ec538fab5" -> "122d9783ee9f16cdfa4b6e1ccfd19e1988cb7af6";
 
 
-"3ed40d3da60b579a91d27203f294e2c64c47f4f5" [label="hexsha: 3ed40d3da60b579a91d27203f294e2c64c47f4f5
+"59458a683c039e2def524d7b7cffb39ec538fab5" [label="hexsha: 59458a683c039e2def524d7b7cffb39ec538fab5
 author: ILM0912
-message: change creating .dot file and add sample
-date: 20.10.2024 20:16"];
-"f9783e61f4b21744a5593c987ab1676465943d75" -> "3ed40d3da60b579a91d27203f294e2c64c47f4f5";
+message: fix 3
+date: 18.10.2024 13:06"];
+"82d17e9fe49c98f04e02d941830ccc71e2da6a27" -> "59458a683c039e2def524d7b7cffb39ec538fab5";
 
 
-"f9783e61f4b21744a5593c987ab1676465943d75" [label="hexsha: f9783e61f4b21744a5593c987ab1676465943d75
+"82d17e9fe49c98f04e02d941830ccc71e2da6a27" [label="hexsha: 82d17e9fe49c98f04e02d941830ccc71e2da6a27
 author: ILM0912
-message: Merge branch 'abandoning_GitPython'
-date: 20.10.2024 20:10"];
-"afcf97d1a49eacce25b4f0acefdc95357fb25556" -> "f9783e61f4b21744a5593c987ab1676465943d75";
-"b847a1c0d5e0816500955451f74d05f12b94add7" -> "f9783e61f4b21744a5593c987ab1676465943d75";
+message: fix 2
+date: 18.10.2024 13:04"];
+"8799e00f658d96b03d32fb8b2f9753cb90f85957" -> "82d17e9fe49c98f04e02d941830ccc71e2da6a27";
 
 
-"afcf97d1a49eacce25b4f0acefdc95357fb25556" [label="hexsha: afcf97d1a49eacce25b4f0acefdc95357fb25556
+"8799e00f658d96b03d32fb8b2f9753cb90f85957" [label="hexsha: 8799e00f658d96b03d32fb8b2f9753cb90f85957
 author: ILM0912
-message: adding visualization (graphviz)
-date: 19.10.2024 21:49"];
-"69f51458cbe9986fc66df0a982960ebe45e2d46b" -> "afcf97d1a49eacce25b4f0acefdc95357fb25556";
+message: fix
+date: 18.10.2024 09:31"];
+"996c73880e24e8f833de938dd3c2c5b02c4ac9ab" -> "8799e00f658d96b03d32fb8b2f9753cb90f85957";
 
 
-"b847a1c0d5e0816500955451f74d05f12b94add7" [label="hexsha: b847a1c0d5e0816500955451f74d05f12b94add7
+"996c73880e24e8f833de938dd3c2c5b02c4ac9ab" [label="hexsha: 996c73880e24e8f833de938dd3c2c5b02c4ac9ab
 author: ILM0912
-message: remove GitPython library (working with the .git folder)
-date: 20.10.2024 20:04"];
-"69f51458cbe9986fc66df0a982960ebe45e2d46b" -> "b847a1c0d5e0816500955451f74d05f12b94add7";
+message: Merge branch 'main' of https://github.com/ILM0912/frontend_first_project
+date: 17.10.2024 14:29"];
+"a1c9e7108ccf0461c802e96fb9f6d6dfe454bf23" -> "996c73880e24e8f833de938dd3c2c5b02c4ac9ab";
+"cc4ed3740e35f8b5711b8cec873253fc78f6da7b" -> "996c73880e24e8f833de938dd3c2c5b02c4ac9ab";
 
 
-"69f51458cbe9986fc66df0a982960ebe45e2d46b" [label="hexsha: 69f51458cbe9986fc66df0a982960ebe45e2d46b
+"a1c9e7108ccf0461c802e96fb9f6d6dfe454bf23" [label="hexsha: a1c9e7108ccf0461c802e96fb9f6d6dfe454bf23
 author: ILM0912
-message: getting dependencies using GitPython
-date: 19.10.2024 21:41"];
-"c2d966e3fb8ae722e2f0f8723e31573f60db7c4e" -> "69f51458cbe9986fc66df0a982960ebe45e2d46b";
+message: create readme.md and vendor/
+date: 17.10.2024 14:28"];
+"646a8f54f892c66965948c884e97a9c89654aad0" -> "a1c9e7108ccf0461c802e96fb9f6d6dfe454bf23";
 
 
-"c2d966e3fb8ae722e2f0f8723e31573f60db7c4e" [label="hexsha: c2d966e3fb8ae722e2f0f8723e31573f60db7c4e
+"cc4ed3740e35f8b5711b8cec873253fc78f6da7b" [label="hexsha: cc4ed3740e35f8b5711b8cec873253fc78f6da7b
 author: ILM0912
-message: update config.csv
-date: 18.10.2024 16:25"];
-"4a744ccce2b0345c18b41428536b9b4ae5ca70d8" -> "c2d966e3fb8ae722e2f0f8723e31573f60db7c4e";
+message: Delete texts_sprint-2.txt
+date: 17.10.2024 14:25"];
+"646a8f54f892c66965948c884e97a9c89654aad0" -> "cc4ed3740e35f8b5711b8cec873253fc78f6da7b";
 
 
-"4a744ccce2b0345c18b41428536b9b4ae5ca70d8" [label="hexsha: 4a744ccce2b0345c18b41428536b9b4ae5ca70d8
+"646a8f54f892c66965948c884e97a9c89654aad0" [label="hexsha: 646a8f54f892c66965948c884e97a9c89654aad0
 author: ILM0912
-message: start and load config
-date: 18.10.2024 16:07"];
+message: done html+css
+date: 17.10.2024 13:47"];
+"a4c33e85d56a683ac02a80738bb2139f8b1fec39" -> "646a8f54f892c66965948c884e97a9c89654aad0";
+
+
+"a4c33e85d56a683ac02a80738bb2139f8b1fec39" [label="hexsha: a4c33e85d56a683ac02a80738bb2139f8b1fec39
+author: ILM0912
+message: update cards
+date: 16.10.2024 21:52"];
+"e105dae6105f16f0bad4b7c117c5a2c8b110b576" -> "a4c33e85d56a683ac02a80738bb2139f8b1fec39";
+
+
+"e105dae6105f16f0bad4b7c117c5a2c8b110b576" [label="hexsha: e105dae6105f16f0bad4b7c117c5a2c8b110b576
+author: ILM0912
+message: Merge branch 'main' of https://github.com/ILM0912/frontend_first_project
+date: 16.10.2024 21:25"];
+"8e5b0052bef3ad2497402f626fff2a9d3fccbf40" -> "e105dae6105f16f0bad4b7c117c5a2c8b110b576";
+"46e13e9ba55e50ded0067c3299eeedaf99dc603b" -> "e105dae6105f16f0bad4b7c117c5a2c8b110b576";
+
+
+"8e5b0052bef3ad2497402f626fff2a9d3fccbf40" [label="hexsha: 8e5b0052bef3ad2497402f626fff2a9d3fccbf40
+author: ILM0912
+message: cards
+date: 16.10.2024 21:24"];
+"e69c7b59b3bc6925d4c97ddac94b27dd09b40a1d" -> "8e5b0052bef3ad2497402f626fff2a9d3fccbf40";
+
+
+"46e13e9ba55e50ded0067c3299eeedaf99dc603b" [label="hexsha: 46e13e9ba55e50ded0067c3299eeedaf99dc603b
+author: ILM0912
+message: Delete images/.DS_Store
+date: 16.10.2024 20:54"];
+"b839d9260dbfbef16b695012de32acbd1d90bde4" -> "46e13e9ba55e50ded0067c3299eeedaf99dc603b";
+
+
+"e69c7b59b3bc6925d4c97ddac94b27dd09b40a1d" [label="hexsha: e69c7b59b3bc6925d4c97ddac94b27dd09b40a1d
+author: ILM0912
+message: cards
+date: 16.10.2024 21:24"];
+"b839d9260dbfbef16b695012de32acbd1d90bde4" -> "e69c7b59b3bc6925d4c97ddac94b27dd09b40a1d";
+
+
+"b839d9260dbfbef16b695012de32acbd1d90bde4" [label="hexsha: b839d9260dbfbef16b695012de32acbd1d90bde4
+author: ILM0912
+message: finish updating (BEM)
+date: 16.10.2024 20:53"];
+"ad5518e65d15c969d1464e3f9a503e9142e208da" -> "b839d9260dbfbef16b695012de32acbd1d90bde4";
+
+
+"ad5518e65d15c969d1464e3f9a503e9142e208da" [label="hexsha: ad5518e65d15c969d1464e3f9a503e9142e208da
+author: ILM0912
+message: update feynman (BEM)
+date: 16.10.2024 20:36"];
+"54ef3c72a1b19d64c4deedcf368112925b085a2c" -> "ad5518e65d15c969d1464e3f9a503e9142e208da";
+
+
+"54ef3c72a1b19d64c4deedcf368112925b085a2c" [label="hexsha: 54ef3c72a1b19d64c4deedcf368112925b085a2c
+author: ILM0912
+message: update table (BEM)
+date: 16.10.2024 20:31"];
+"4739e3ce54c55f4c2628be8b5825d64f2a9924f8" -> "54ef3c72a1b19d64c4deedcf368112925b085a2c";
+
+
+"4739e3ce54c55f4c2628be8b5825d64f2a9924f8" [label="hexsha: 4739e3ce54c55f4c2628be8b5825d64f2a9924f8
+author: ILM0912
+message: digits and section-title -subtitle update (BEM)
+date: 16.10.2024 20:26"];
+"9aafe54dec322a956f43757b2a3f5cf1ea014001" -> "4739e3ce54c55f4c2628be8b5825d64f2a9924f8";
+
+
+"9aafe54dec322a956f43757b2a3f5cf1ea014001" [label="hexsha: 9aafe54dec322a956f43757b2a3f5cf1ea014001
+author: ILM0912
+message: description and two-columns update(BEM)
+date: 16.10.2024 20:19"];
+"9709eea19780acf8f9c7ab8aba4c12d65f9d74f0" -> "9aafe54dec322a956f43757b2a3f5cf1ea014001";
+
+
+"9709eea19780acf8f9c7ab8aba4c12d65f9d74f0" [label="hexsha: 9709eea19780acf8f9c7ab8aba4c12d65f9d74f0
+author: ILM0912
+message: update link and logo (BEM)
+date: 16.10.2024 20:09"];
+"e61565338f6e41b72c42b28b8e9b310efc46f0c0" -> "9709eea19780acf8f9c7ab8aba4c12d65f9d74f0";
+
+
+"e61565338f6e41b72c42b28b8e9b310efc46f0c0" [label="hexsha: e61565338f6e41b72c42b28b8e9b310efc46f0c0
+author: ILM0912
+message: Merge branch 'main' of https://github.com/ILM0912/frontend_first_project
+date: 16.10.2024 19:57"];
+"1d4144b841dae16233060fe29d0e9a7fc1ab1698" -> "e61565338f6e41b72c42b28b8e9b310efc46f0c0";
+"5c9edb533c35a63aefdcb57f1ab2aa99bc7429cc" -> "e61565338f6e41b72c42b28b8e9b310efc46f0c0";
+
+
+"1d4144b841dae16233060fe29d0e9a7fc1ab1698" [label="hexsha: 1d4144b841dae16233060fe29d0e9a7fc1ab1698
+author: ILM0912
+message: header update (bem)
+date: 16.10.2024 19:56"];
+"a3767fcbd900baa491ef9b424412a5a8474b6a50" -> "1d4144b841dae16233060fe29d0e9a7fc1ab1698";
+
+
+"5c9edb533c35a63aefdcb57f1ab2aa99bc7429cc" [label="hexsha: 5c9edb533c35a63aefdcb57f1ab2aa99bc7429cc
+author: ILM0912
+message: Delete .DS_Store
+date: 04.10.2024 15:31"];
+"a3767fcbd900baa491ef9b424412a5a8474b6a50" -> "5c9edb533c35a63aefdcb57f1ab2aa99bc7429cc";
+
+
+"a3767fcbd900baa491ef9b424412a5a8474b6a50" [label="hexsha: a3767fcbd900baa491ef9b424412a5a8474b6a50
+author: ILM0912
+message: Конец
+date: 04.10.2024 14:04"];
+"79149035fb1fe38467bd969eaf3eeccd40ca4886" -> "a3767fcbd900baa491ef9b424412a5a8474b6a50";
+
+
+"79149035fb1fe38467bd969eaf3eeccd40ca4886" [label="hexsha: 79149035fb1fe38467bd969eaf3eeccd40ca4886
+author: ILM0912
+message: исправлена ссылка в блоке feynman
+date: 03.10.2024 14:32"];
+"00345149e4247b5c51efff04041b9fbaaf21e9e1" -> "79149035fb1fe38467bd969eaf3eeccd40ca4886";
+
+
+"00345149e4247b5c51efff04041b9fbaaf21e9e1" [label="hexsha: 00345149e4247b5c51efff04041b9fbaaf21e9e1
+author: ILM0912
+message: доделанная работа, но надо проверить
+date: 02.10.2024 22:25"];
 }

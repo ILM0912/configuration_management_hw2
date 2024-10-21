@@ -15,7 +15,7 @@ def load_config(config_file):
 
 def commit_by_tag(repo_path, tag_name):
     tag_file_path = os.path.join(repo_path, ".git", "refs", "tags", tag_name)
-    if os.path.exists(tag_file_path):
+    if len(tag_name)>0 and os.path.exists(tag_file_path):
         with open(tag_file_path, "r") as tag_file:
             tag_commit_hash = tag_file.read().strip()
     else:
