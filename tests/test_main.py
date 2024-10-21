@@ -32,6 +32,6 @@ def test_get_commits_dependency(tmpdir):
 def test_create_dot_file(tmpdir):
     output_file = str(tmpdir.join('output.dot'))
     commits_dict = {
-        'commit_id': {'author': 'Test Author', 'message': 'Test Message', 'parent': [], 'date': '2022-02-22'}}
+        'commit_id': {'author': 'Test Author', 'message': 'Test Message', 'parent': [], 'date': '2022-02-22', 'files': 'a'}}
     create_dot_file(commits_dict, output_file)
     assert os.path.exists(output_file)

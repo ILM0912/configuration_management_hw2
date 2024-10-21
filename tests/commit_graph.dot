@@ -4,14 +4,35 @@ node [shape=rect, color=blue]
 "27696f30a36d466d0de0902accf033416f9df061" [label="hexsha: 27696f30a36d466d0de0902accf033416f9df061
 author: ILM0912
 message: конечная версия с тестами
-date: 27.09.2024 20:23"];
+date: 27.09.2024 20:23
+
+changed files
+.idea/vcs.xml --- A
+disk.tar --- M
+first_state_disk.tar --- A
+log.csv --- M
+main.py --- M
+start_script.txt --- M
+tests/first_state_disk.tar --- A
+tests/log.csv --- A
+tests/start_script.txt --- A
+tests/test_dir.tar --- A
+tests/test_main.py --- A
+"];
 "93bea78a8f78cc73137248304eac42a8c07528a5" -> "27696f30a36d466d0de0902accf033416f9df061";
 
 
 "93bea78a8f78cc73137248304eac42a8c07528a5" [label="hexsha: 93bea78a8f78cc73137248304eac42a8c07528a5
 author: ILM0912
 message: добавлена find, осталось тесты добавить
-date: 27.09.2024 15:32"];
+date: 27.09.2024 15:32
+
+changed files
+disk.tar --- M
+log.csv --- M
+main.py --- M
+start_script.txt --- A
+"];
 "5d07e5d30eb32a5082eb8133ef8b79c97f029ba7" -> "93bea78a8f78cc73137248304eac42a8c07528a5";
 
 
