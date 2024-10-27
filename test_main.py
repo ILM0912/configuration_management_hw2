@@ -4,7 +4,7 @@ import pytest
 from main import load_config, commit_by_tag, get_commits_dependency, create_dot_file
 
 def test_load_config():
-    settings = load_config("config.csv")
+    settings = load_config("test_config.csv")
     assert settings['graphviz_path'] == 'C:/Program Files/Graphviz/bin/dot.exe'
     assert settings['repository_path'] == r'C:\Users\admin\PycharmProjects\vShell'
     assert settings['tag_name'] == 'tag'
