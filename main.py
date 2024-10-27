@@ -19,7 +19,7 @@ def commit_by_tag(repo_path, tag_name):
         with open(tag_file_path, "r") as tag_file:
             tag_commit_hash = tag_file.read().strip()
     else:
-        print(f"\033[33mНет коммита с тегом {tag_name}, граф построен для последнего коммита\033[0m")
+        print(f'\033[33mНет коммита с тегом "{tag_name}", граф построен для последнего коммита\033[0m')
         with open(os.path.join(repo_path, ".git", "HEAD"), "r") as head_file:
             head_content = head_file.read().strip()
             if head_content.startswith("ref:"):

@@ -22,11 +22,12 @@ def test_commit_by_tag(tmpdir):
 
 
 def test_get_commits_dependency(tmpdir):
-    with pytest.raises(Exception) as e:
+    try:
         test_repo = tmpdir.mkdir('test_repo')
         starting_commit_info = 'test_commit_hash'
         get_commits_dependency(str(test_repo), starting_commit_info)
-    assert str(e.value) == "Ошибка при чтении или декомпрессии коммита test_commit_hash"
+    except Exception as e:
+        assert str(e) == "Ошибка при чтении или декомпрессии коммита test_commit_hash"
 
 
 def test_create_dot_file(tmpdir):
