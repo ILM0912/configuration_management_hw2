@@ -6,8 +6,14 @@ author: ILM0912
 message: fix final
 date: 18.10.2024 13:11
 
-changed files
-blocks/video/__iframe/video__iframe.css --- M
+files
+📁 blocks
+📁 images
+📁 pages
+📁 vendor
+
+📄 index.html
+📄 readme.md
 "];
 "59458a683c039e2def524d7b7cffb39ec538fab5" -> "122d9783ee9f16cdfa4b6e1ccfd19e1988cb7af6";
 
@@ -17,16 +23,14 @@ author: ILM0912
 message: fix 3
 date: 18.10.2024 13:06
 
-changed files
-blocks/cards/__description/cards__description.css --- A
-blocks/cards/__image/cards__image.css --- A
-blocks/cards/__item/cards__item.css --- A
-blocks/cards/__title/cards__title.css --- A
-blocks/cards/cards__description/cards__description.css --- D
-blocks/cards/cards__image/cards__image.css --- D
-blocks/cards/cards__item/cards__item.css --- D
-blocks/cards/cards__title/cards__title.css --- D
-pages/index.css --- M
+files
+📁 blocks
+📁 images
+📁 pages
+📁 vendor
+
+📄 index.html
+📄 readme.md
 "];
 "82d17e9fe49c98f04e02d941830ccc71e2da6a27" -> "59458a683c039e2def524d7b7cffb39ec538fab5";
 
@@ -36,9 +40,14 @@ author: ILM0912
 message: fix 2
 date: 18.10.2024 13:04
 
-changed files
-index.html --- M
-pages/index.css --- M
+files
+📁 blocks
+📁 pages
+📁 vendor
+
+📄 images
+📄 index.html
+📄 readme.md
 "];
 "8799e00f658d96b03d32fb8b2f9753cb90f85957" -> "82d17e9fe49c98f04e02d941830ccc71e2da6a27";
 
@@ -48,9 +57,14 @@ author: ILM0912
 message: fix
 date: 18.10.2024 09:31
 
-changed files
-blocks/cards/cards__image/cards__image.css --- M
-index.html --- M
+files
+📁 blocks
+📁 pages
+📁 vendor
+
+📄 images
+📄 index.html
+📄 readme.md
 "];
 "996c73880e24e8f833de938dd3c2c5b02c4ac9ab" -> "8799e00f658d96b03d32fb8b2f9753cb90f85957";
 
@@ -58,7 +72,17 @@ index.html --- M
 "996c73880e24e8f833de938dd3c2c5b02c4ac9ab" [label="hexsha: 996c73880e24e8f833de938dd3c2c5b02c4ac9ab
 author: ILM0912
 message: Merge branch 'main' of https://github.com/ILM0912/frontend_first_project
-date: 17.10.2024 14:29"];
+date: 17.10.2024 14:29
+
+files
+📁 blocks
+📁 images
+📁 pages
+📁 vendor
+
+📄 index.html
+📄 readme.md
+"];
 "a1c9e7108ccf0461c802e96fb9f6d6dfe454bf23" -> "996c73880e24e8f833de938dd3c2c5b02c4ac9ab";
 "cc4ed3740e35f8b5711b8cec873253fc78f6da7b" -> "996c73880e24e8f833de938dd3c2c5b02c4ac9ab";
 
@@ -68,11 +92,14 @@ author: ILM0912
 message: create readme.md and vendor/
 date: 17.10.2024 14:28
 
-changed files
-readme.md --- A
-styles/normalize.css --- D
-texts_sprint-2.txt --- D
-vendor/normalize.css --- A
+files
+📁 blocks
+📁 images
+📁 pages
+📁 vendor
+
+📄 index.html
+📄 readme.md
 "];
 "646a8f54f892c66965948c884e97a9c89654aad0" -> "a1c9e7108ccf0461c802e96fb9f6d6dfe454bf23";
 
@@ -82,8 +109,13 @@ author: ILM0912
 message: Delete texts_sprint-2.txt
 date: 17.10.2024 14:25
 
-changed files
-texts_sprint-2.txt --- D
+files
+📁 blocks
+📁 images
+📁 pages
+📁 styles
+
+📄 index.html
 "];
 "646a8f54f892c66965948c884e97a9c89654aad0" -> "cc4ed3740e35f8b5711b8cec873253fc78f6da7b";
 
@@ -93,29 +125,14 @@ author: ILM0912
 message: done html+css
 date: 17.10.2024 13:47
 
-changed files
-blocks/cards/cards.css --- M
-blocks/description/description.css --- M
-blocks/khan/__author/khan__author.css --- A
-blocks/khan/__book-container/khan__book-container.css --- A
-blocks/khan/__book-pic/khan__book-pic.css --- A
-blocks/khan/__buy-link/khan__buy-link.css --- A
-blocks/khan/__container/khan__container.css --- A
-blocks/khan/__quote-author-subline/khan__quote-author-subline.css --- A
-blocks/khan/__quote-author/khan__quote-author.css --- A
-blocks/khan/__quote/khan__quote.css --- A
-blocks/khan/__title/khan__title.css --- A
-blocks/khan/khan.css --- A
-blocks/oakley/oakley.css --- A
-blocks/resources/__link/resources__link.css --- A
-blocks/resources/__logo-zone/resources__logo-zone.css --- A
-blocks/resources/resources.css --- A
-blocks/two-columns/two-columns.css --- M
-blocks/video/__iframe/video__iframe.css --- A
-blocks/video/__iframes/video__iframes.css --- A
-blocks/video/video.css --- A
-index.html --- M
-pages/index.css --- M
+files
+📁 blocks
+📁 images
+📁 pages
+📁 styles
+
+📄 index.html
+📄 texts_sprint-2.txt
 "];
 "a4c33e85d56a683ac02a80738bb2139f8b1fec39" -> "646a8f54f892c66965948c884e97a9c89654aad0";
 
@@ -125,13 +142,14 @@ author: ILM0912
 message: update cards
 date: 16.10.2024 21:52
 
-changed files
-blocks/cards/card__item/card__item.css --- D
-blocks/cards/cards.css --- M
-blocks/cards/cards__image/cards__image.css --- M
-blocks/cards/cards__item/cards__item.css --- A
-index.html --- M
-pages/index.css --- M
+files
+📁 blocks
+📁 images
+📁 pages
+📁 styles
+
+📄 index.html
+📄 texts_sprint-2.txt
 "];
 "e105dae6105f16f0bad4b7c117c5a2c8b110b576" -> "a4c33e85d56a683ac02a80738bb2139f8b1fec39";
 
@@ -139,7 +157,17 @@ pages/index.css --- M
 "e105dae6105f16f0bad4b7c117c5a2c8b110b576" [label="hexsha: e105dae6105f16f0bad4b7c117c5a2c8b110b576
 author: ILM0912
 message: Merge branch 'main' of https://github.com/ILM0912/frontend_first_project
-date: 16.10.2024 21:25"];
+date: 16.10.2024 21:25
+
+files
+📁 blocks
+📁 images
+📁 pages
+📁 styles
+
+📄 index.html
+📄 texts_sprint-2.txt
+"];
 "8e5b0052bef3ad2497402f626fff2a9d3fccbf40" -> "e105dae6105f16f0bad4b7c117c5a2c8b110b576";
 "46e13e9ba55e50ded0067c3299eeedaf99dc603b" -> "e105dae6105f16f0bad4b7c117c5a2c8b110b576";
 
@@ -149,14 +177,14 @@ author: ILM0912
 message: cards
 date: 16.10.2024 21:24
 
-changed files
-blocks/cards/card__item/card__item.css --- A
-blocks/cards/cards.css --- A
-blocks/cards/cards__description/cards__description.css --- A
-blocks/cards/cards__image/cards__image.css --- A
-blocks/cards/cards__title/cards__title.css --- A
-blocks/techniques/techniques.css --- A
-pages/index.css --- M
+files
+📁 blocks
+📁 images
+📁 pages
+📁 styles
+
+📄 index.html
+📄 texts_sprint-2.txt
 "];
 "e69c7b59b3bc6925d4c97ddac94b27dd09b40a1d" -> "8e5b0052bef3ad2497402f626fff2a9d3fccbf40";
 
@@ -166,8 +194,14 @@ author: ILM0912
 message: Delete images/.DS_Store
 date: 16.10.2024 20:54
 
-changed files
-images/.DS_Store --- D
+files
+📁 blocks
+📁 images
+📁 pages
+📁 styles
+
+📄 index.html
+📄 texts_sprint-2.txt
 "];
 "b839d9260dbfbef16b695012de32acbd1d90bde4" -> "46e13e9ba55e50ded0067c3299eeedaf99dc603b";
 
@@ -177,8 +211,14 @@ author: ILM0912
 message: cards
 date: 16.10.2024 21:24
 
-changed files
-index.html --- M
+files
+📁 blocks
+📁 images
+📁 pages
+📁 styles
+
+📄 index.html
+📄 texts_sprint-2.txt
 "];
 "b839d9260dbfbef16b695012de32acbd1d90bde4" -> "e69c7b59b3bc6925d4c97ddac94b27dd09b40a1d";
 
@@ -188,21 +228,14 @@ author: ILM0912
 message: finish updating (BEM)
 date: 16.10.2024 20:53
 
-changed files
-blocks/footer/__author/footer__author.css --- A
-blocks/footer/__column-heading/footer__column-heading.css --- A
-blocks/footer/__column-link/footer__column-link.css --- A
-blocks/footer/__column-links/footer__column-links.css --- A
-blocks/footer/__column/_content/footer__column_content_copyright.css --- A
-blocks/footer/__columns/footer__columns.css --- A
-blocks/footer/__social-icon/footer__social-icon.css --- A
-blocks/footer/footer.css --- A
-blocks/kaufman/__triangle/kaufman__triangle.css --- A
-blocks/kaufman/kaufman.css --- A
-blocks/root/root.css --- A
-index.html --- M
-pages/index.css --- M
-styles/style.css --- D
+files
+📁 blocks
+📁 images
+📁 pages
+📁 styles
+
+📄 index.html
+📄 texts_sprint-2.txt
 "];
 "ad5518e65d15c969d1464e3f9a503e9142e208da" -> "b839d9260dbfbef16b695012de32acbd1d90bde4";
 
@@ -212,15 +245,14 @@ author: ILM0912
 message: update feynman (BEM)
 date: 16.10.2024 20:36
 
-changed files
-blocks/feynman/__image/feynman__image.css --- A
-blocks/feynman/__link/feynman__link.css --- A
-blocks/feynman/__subtitile/feynman__subtitle.css --- A
-blocks/feynman/__title/feynman__title.css --- A
-blocks/feynman/feynman.css --- A
-blocks/table/__cell/_theme/table__cell_theme_dark.css --- A
-pages/index.css --- M
-styles/style.css --- M
+files
+📁 blocks
+📁 images
+📁 pages
+📁 styles
+
+📄 index.html
+📄 texts_sprint-2.txt
 "];
 "54ef3c72a1b19d64c4deedcf368112925b085a2c" -> "ad5518e65d15c969d1464e3f9a503e9142e208da";
 
@@ -230,14 +262,14 @@ author: ILM0912
 message: update table (BEM)
 date: 16.10.2024 20:31
 
-changed files
-blocks/table/__cell/_theme/table__cell_theme_white.css --- A
-blocks/table/__cell/table__cell.css --- A
-blocks/table/__heading/table__heading.css --- A
-blocks/table/__text/table__text.css --- A
-blocks/table/table.css --- A
-pages/index.css --- M
-styles/style.css --- M
+files
+📁 blocks
+📁 images
+📁 pages
+📁 styles
+
+📄 index.html
+📄 texts_sprint-2.txt
 "];
 "4739e3ce54c55f4c2628be8b5825d64f2a9924f8" -> "54ef3c72a1b19d64c4deedcf368112925b085a2c";
 
@@ -247,14 +279,14 @@ author: ILM0912
 message: digits and section-title -subtitle update (BEM)
 date: 16.10.2024 20:26
 
-changed files
-blocks/digits/digits.css --- A
-blocks/section-subtitle/_theme/section-subtitle_theme_dark.css --- A
-blocks/section-subtitle/section-subtitle.css --- A
-blocks/section-title/_theme/section-title_theme_dark.css --- A
-blocks/section-title/section-title.css --- A
-pages/index.css --- M
-styles/style.css --- M
+files
+📁 blocks
+📁 images
+📁 pages
+📁 styles
+
+📄 index.html
+📄 texts_sprint-2.txt
 "];
 "9aafe54dec322a956f43757b2a3f5cf1ea014001" -> "4739e3ce54c55f4c2628be8b5825d64f2a9924f8";
 
@@ -264,16 +296,14 @@ author: ILM0912
 message: description and two-columns update(BEM)
 date: 16.10.2024 20:19
 
-changed files
-blocks/description/description.css --- A
-blocks/two-columns/__brief/two-columns__brief.css --- A
-blocks/two-columns/__main-text/two-columns__main-text.css --- A
-blocks/two-columns/__paragraph/_margin_bottom/two-columns__paragrapg_margin_bottom.css --- A
-blocks/two-columns/__paragraph/two_columns__paragraph.css --- A
-blocks/two-columns/__span-accent/__span-accent.css --- A
-blocks/two-columns/two-columns.css --- A
-pages/index.css --- M
-styles/style.css --- M
+files
+📁 blocks
+📁 pages
+📁 styles
+
+📄 images
+📄 index.html
+📄 texts_sprint-2.txt
 "];
 "9709eea19780acf8f9c7ab8aba4c12d65f9d74f0" -> "9aafe54dec322a956f43757b2a3f5cf1ea014001";
 
@@ -283,15 +313,14 @@ author: ILM0912
 message: update link and logo (BEM)
 date: 16.10.2024 20:09
 
-changed files
-.editorconfig --- D
-blocks/link/link.css --- A
-blocks/logo/_place/logo_place_header.css --- A
-blocks/logo/logo.css --- A
-index.html --- M
-pages/index.css --- M
-styles/style.css --- M
-texts.md --- D
+files
+📁 blocks
+📁 images
+📁 pages
+📁 styles
+
+📄 index.html
+📄 texts_sprint-2.txt
 "];
 "e61565338f6e41b72c42b28b8e9b310efc46f0c0" -> "9709eea19780acf8f9c7ab8aba4c12d65f9d74f0";
 
@@ -299,7 +328,19 @@ texts.md --- D
 "e61565338f6e41b72c42b28b8e9b310efc46f0c0" [label="hexsha: e61565338f6e41b72c42b28b8e9b310efc46f0c0
 author: ILM0912
 message: Merge branch 'main' of https://github.com/ILM0912/frontend_first_project
-date: 16.10.2024 19:57"];
+date: 16.10.2024 19:57
+
+files
+📁 blocks
+📁 images
+📁 pages
+📁 styles
+
+📄 .editorconfig
+📄 index.html
+📄 texts.md
+📄 texts_sprint-2.txt
+"];
 "1d4144b841dae16233060fe29d0e9a7fc1ab1698" -> "e61565338f6e41b72c42b28b8e9b310efc46f0c0";
 "5c9edb533c35a63aefdcb57f1ab2aa99bc7429cc" -> "e61565338f6e41b72c42b28b8e9b310efc46f0c0";
 
@@ -309,29 +350,17 @@ author: ILM0912
 message: header update (bem)
 date: 16.10.2024 19:56
 
-changed files
-.vscode/launch.json --- D
-.vscode/settings.json --- D
-blocks/header/__main-illustration/header__main-illustration.css --- A
-blocks/header/__square-pic/header__square-pic.css --- A
-blocks/header/__subtitle/header__subtitle.css --- A
-blocks/header/__title/header__title.css --- A
-blocks/header/header.css --- A
-blocks/rotation/rotation.css --- A
-images/cards-attention.png --- A
-images/cards-competence.png --- A
-images/cards-interliving.png --- A
-images/cards-question.png --- A
-images/cards-recall.png --- A
-images/khan-book.jpg --- A
-images/logo/resources-arzamas.svg --- A
-images/logo/resources-n1.svg --- A
-images/logo/resources-polka.svg --- A
-images/logo/resources-strelka.svg --- A
-index.html --- M
-pages/index.css --- A
-styles/style.css --- M
-texts_sprint-2.txt --- A
+files
+📁 blocks
+📁 images
+📁 pages
+📁 styles
+
+📄 .DS_Store
+📄 .editorconfig
+📄 index.html
+📄 texts.md
+📄 texts_sprint-2.txt
 "];
 "a3767fcbd900baa491ef9b424412a5a8474b6a50" -> "1d4144b841dae16233060fe29d0e9a7fc1ab1698";
 
@@ -341,8 +370,14 @@ author: ILM0912
 message: Delete .DS_Store
 date: 04.10.2024 15:31
 
-changed files
-.DS_Store --- D
+files
+📁 .vscode
+📁 images
+📁 styles
+
+📄 .editorconfig
+📄 index.html
+📄 texts.md
 "];
 "a3767fcbd900baa491ef9b424412a5a8474b6a50" -> "5c9edb533c35a63aefdcb57f1ab2aa99bc7429cc";
 
@@ -352,8 +387,15 @@ author: ILM0912
 message: Конец
 date: 04.10.2024 14:04
 
-changed files
-styles/style.css --- M
+files
+📁 .vscode
+📁 images
+📁 styles
+
+📄 .DS_Store
+📄 .editorconfig
+📄 index.html
+📄 texts.md
 "];
 "79149035fb1fe38467bd969eaf3eeccd40ca4886" -> "a3767fcbd900baa491ef9b424412a5a8474b6a50";
 
@@ -363,8 +405,15 @@ author: ILM0912
 message: исправлена ссылка в блоке feynman
 date: 03.10.2024 14:32
 
-changed files
-styles/style.css --- M
+files
+📁 .vscode
+📁 images
+📁 styles
+
+📄 .DS_Store
+📄 .editorconfig
+📄 index.html
+📄 texts.md
 "];
 "00345149e4247b5c51efff04041b9fbaaf21e9e1" -> "79149035fb1fe38467bd969eaf3eeccd40ca4886";
 
@@ -372,5 +421,16 @@ styles/style.css --- M
 "00345149e4247b5c51efff04041b9fbaaf21e9e1" [label="hexsha: 00345149e4247b5c51efff04041b9fbaaf21e9e1
 author: ILM0912
 message: доделанная работа, но надо проверить
-date: 02.10.2024 22:25"];
+date: 02.10.2024 22:25
+
+files
+📁 .vscode
+📁 images
+📁 styles
+
+📄 .DS_Store
+📄 .editorconfig
+📄 index.html
+📄 texts.md
+"];
 }

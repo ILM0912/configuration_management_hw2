@@ -1,8 +1,10 @@
 import csv
+import re
 import subprocess
 from datetime import datetime, timedelta, timezone
 import os
 import zlib
+
 
 def load_config(config_file):
     setting = {}
@@ -43,6 +45,7 @@ def get_commits_dependency(repo_path, starting_commit_info):
                 decompressed_content = zlib.decompress(commit_file.read())
                 decoded_content = decompressed_content.decode('utf-8').splitlines()
                 parent_hashes = []
+                files_in = ""
                 for line in decoded_content:
                     if line.startswith('author'):
                         author = line.split(' ')[1]
@@ -56,14 +59,27 @@ def get_commits_dependency(repo_path, starting_commit_info):
                         date = datetime_timezone.strftime('%d.%m.%Y %H:%M')
                     if line.startswith('parent'):
                         parent_hashes+=[line.split(' ')[1]]
+                    if line.startswith('commit '):
+                        files_in = line.split("tree ")[1]
                 message = decoded_content[-1]
-                subprocess.run(['git', 'config', '--global', 'core.pager', "'less --raw-control-chars'"], cwd=repo_path)
-                result = subprocess.run(['git', 'diff-tree', '--no-commit-id', '--name-status', '-r', current_commit_hash], cwd=repo_path, capture_output=True, text=True, check=True, encoding='UTF-8')
-                result = result.stdout.splitlines()
-                files_string = ""
-                for file in result:
-                    type, file_name = file.split('\t')
-                    files_string += f"{file_name} --- {type}\n"
+                tree_files_path = os.path.join(repo_path, ".git", "objects", files_in[:2], files_in[2:])
+                with open(tree_files_path, "rb") as tree_file:
+                    files_string = ""
+                    data = zlib.decompress(tree_file.read())
+                    pattern = rb'(?P<mode>\d{5,6})\s+(?P<filename>[^\x00]+)'
+                    result_files = re.findall(pattern, data)
+                    for i in range(len(result_files)):
+                        mode, filename = result_files[i]
+                        mode = mode.decode('utf-8')
+                        filename = filename.decode('utf-8')
+                        result_files[i] = (mode, filename)
+                        if len(mode)==5:
+                            files_string+=f'📁 {filename}\n'
+                    files_string+='\n'
+                    for mode, filename in result_files:
+                        if len(mode)==6:
+                            files_string+=f'📄 {filename}\n'
+
                 commit_info = {
                     'author': author,
                     'message': message,
@@ -88,7 +104,7 @@ def create_dot_file(commits_dict, output_file):
             date = commit_info['date']
             files = commit_info['files']
             if len(files)>0:
-                file.write(f'\n\n"{commit_id}" [label="hexsha: {commit_id}\nauthor: {author}\nmessage: {message}\ndate: {date}\n\nchanged files\n{files}"];\n')
+                file.write(f'\n\n"{commit_id}" [label="hexsha: {commit_id}\nauthor: {author}\nmessage: {message}\ndate: {date}\n\nfiles\n{files}"];\n')
             else:
                 file.write(f'\n\n"{commit_id}" [label="hexsha: {commit_id}\nauthor: {author}\nmessage: {message}\ndate: {date}"];\n')
             for parent_id in commit_info['parent']:
@@ -102,7 +118,7 @@ def main():
     tag_name = config['tag_name']
     commits_dict = get_commits_dependency(repository_path, commit_by_tag(repository_path, tag_name))
     create_dot_file(commits_dict, 'commit_graph.dot')
-    subprocess.run([graphviz_path, '-Tpng', 'commit_graph.dot', '-o', 'commit_graph.png'])
+    subprocess.run([graphviz_path, '-Tsvg', 'commit_graph.dot', '-o', 'commit_graph.svg'])
     print('\033[92mГраф зависимостей успешно построен, находится в файле проекта - commit_graph.png\033[0m')
 
 if __name__ == "__main__":
