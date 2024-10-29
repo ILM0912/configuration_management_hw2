@@ -118,8 +118,9 @@ def main():
     tag_name = config['tag_name']
     commits_dict = get_commits_dependency(repository_path, commit_by_tag(repository_path, tag_name))
     create_dot_file(commits_dict, 'commit_graph.dot')
+    subprocess.run([graphviz_path, '-Tpng', 'commit_graph.dot', '-o', 'commit_graph.png'])
     subprocess.run([graphviz_path, '-Tsvg', 'commit_graph.dot', '-o', 'commit_graph.svg'])
-    print('\033[92mГраф зависимостей успешно построен, находится в файле проекта - commit_graph.png\033[0m')
+    print('\033[92mГраф зависимостей успешно построен, находится в файле проекта - commit_graph.png или commit_graph.svg\033[0m')
 
 if __name__ == "__main__":
     main()
