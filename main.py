@@ -66,19 +66,20 @@ def get_commits_dependency(repo_path, starting_commit_info):
                 with open(tree_files_path, "rb") as tree_file:
                     files_string = ""
                     data = zlib.decompress(tree_file.read())
-                    pattern = rb'(?P<mode>\d{5,6})\s+(?P<filename>[^\x00]+)'
+                    pattern = rb'(?P<mode>\d{5,6})\s+(?P<filename>[^\x00]+)\x00(?P<extra>.{20})'
                     result_files = re.findall(pattern, data)
                     for i in range(len(result_files)):
-                        mode, filename = result_files[i]
+                        mode, filename, object_hexsha = result_files[i]
                         mode = mode.decode('utf-8')
                         filename = filename.decode('utf-8')
-                        result_files[i] = (mode, filename)
+                        object_hexsha = object_hexsha.hex()
+                        result_files[i] = (mode, filename, object_hexsha)
                         if len(mode)==5:
-                            files_string+=f'📁 {filename}\n'
+                            files_string+=f'📁 {filename} - {object_hexsha[:6]}\n'
                     files_string+='\n'
-                    for mode, filename in result_files:
+                    for mode, filename, object_hexsha in result_files:
                         if len(mode)==6:
-                            files_string+=f'📄 {filename}\n'
+                            files_string+=f'📄 {filename} - {object_hexsha[:6]}\n'
 
                 commit_info = {
                     'author': author,
